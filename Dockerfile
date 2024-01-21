@@ -7,5 +7,5 @@ WORKDIR /var/www/html/
 RUN unzip carvilla.zip
 RUN cp -rvf carvilla/* .
 RUN rm -rf carvilla carvilla.zip
-CMD ["/usr/sbin/httpd" , "-D" , "FOREGROUND"]
-EXPOSE 80
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+EXPOSE 80 22
